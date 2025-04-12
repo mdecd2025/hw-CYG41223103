@@ -1,0 +1,15 @@
+from cmsimde impfrom gevent.pywsgi import WSGIServer
+http_server = WSGIServer(('0.0.0.0', 8080), flaskapp.app)
+http_server.serve_forever()
+ort flaskapp
+from gevent.pywsgi import WSGIServer
+
+#flaskapp.app.run(host="0.0.0.0", debug=True)
+http_server = WSGIServer(('0.0.0.0', 8080), flaskapp.app)
+http_server.serve_forever()
+from cmsimde import flaskapp
+from gevent.pywsgi import WSGIServer
+
+# 啟動 Flask 應用並開啟 debug 模式
+flaskapp.app.run(host="0.0.0.0", port=8080, debug=True)
+python ./main.py
