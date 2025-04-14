@@ -2,7 +2,7 @@
         <head>
         <title>cd_hw</title>
         <meta charset="utf-8">
-<meta property="head" content="H2">
+<meta property="head" content="H3">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
@@ -142,10 +142,126 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Exam1 << <a href='Exam1.html'>Previous</a> <a href='Exam3.html'>Next</a> >> Exam3<br /><h1>Exam2</h1>
-<p>Exam2 (10%): 利用 CAD 零組件建立模擬場景</p>
-<p>操作影片標題: 國立虎尾科技大學 - 機械設計工程系 - cd2025 Exam2 - 學員學號</p>
-<br />Exam1 << <a href='Exam1.html'>Previous</a> <a href='Exam3.html'>Next</a> >> Exam3</div>
+    <div id="tipue_search_content">Task2 << <a href='Task2.html'>Previous</a> <a href='task3.html'>Next</a> >> task3<br /><h1>W3</h1>
+<p><a href="https://mdecd2025.github.io/hw-scrum-1/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9f3df9d865a7ceca8e799ee9b1a31602/raw/113a3d7e19b36a7672a136f3731ef07b095adeef/list_2a.py">列出 2a 學員作業網站與倉儲連結</a></p>
+<p><a href="https://mdecd2025.github.io/hw-scrum-1/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9f3df9d865a7ceca8e799ee9b1a31602/raw/29173e8b73ad422fd7c44bcd93658a3579d63633/list_stage_3.py">列出 2b 學員作業網站與倉儲連結</a></p>
+<p><a href="https://mdecd2025.github.io/hw-scrum-1/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9f3df9d865a7ceca8e799ee9b1a31602/raw/a4414e311503fac8d57d4f5e44999147c54cf7fa/list_2a_group.py">列出 2a 分組網站與倉儲連結</a></p>
+<p><a href="https://mdecd2025.github.io/hw-scrum-1/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9f3df9d865a7ceca8e799ee9b1a31602/raw/a4414e311503fac8d57d4f5e44999147c54cf7fa/list_2b_group.py">列出 2b 分組網站與倉儲連結</a></p>
+<hr/>
+<p><span>請列出各組目前尚未納入分組的學員名單</span></p>
+<p><button id="add1to100">1 add to 100</button></p>
+<p><!-- 導入 brython 程式庫 --></p>
+<p>
+<script src="./../cmsimde/static/brython.js"></script>
+<script src="./../cmsimde/static/brython_stdlib.js"></script>
+</p>
+<p><!-- 啟動 Brython --></p>
+<p>
+<script>
+window.onload=function(){
+    brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
+}
+</script>
+</p>
+<p><!-- 請注意, 這裡使用 Javascript 將 localStorage["kw_py_src1"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
+<p>
+<script type="text/javascript">
+function doSave(storage_id, filename){
+    var blob = new Blob([localStorage[storage_id]], {type: "text/plain;charset=utf-8"});
+    filename = document.getElementById(filename).value
+    saveAs(blob, filename+".py");
+}
+</script>
+</p>
+<p><!-- add 1 to 100 開始 -->
+<script type="text/python3">
+from browser import document as doc, html
+
+# 用來顯示未分組的學員
+def display_unassigned_members(url):
+    # 讀取檔案中的學員資料
+    data = open(url).readlines()
+
+    # 篩選出有效資料（跳過標題）
+    all_stud = data[1:]
+
+    # 找出尚未分組的學員，假設分組的學員在 github 帳號或學號中有某個特徵
+    unassigned_stud = []
+
+    for i in all_stud:
+        stud = i.split("\t")
+        stud_num = stud[0]
+        github = stud[1]
+
+        # 假設如果學員的 github 帳號或學號為空，代表未分組
+        if not github or github.strip() == "":  # 假設空的帳號代表未分組
+            unassigned_stud.append((stud_num, github))
+
+    # 顯示未分組學員
+    brython_div1 = document["brython_div1"]
+    brython_div1 <= html.H2("尚未分組的學員")
+
+    count = 0
+    for stud_num, github in unassigned_stud:
+        count += 1
+        brython_div1 <= str(count) + ". " + html.A(str(stud_num), href="https://mdecd2025.github.io/hw-" + str(github) if github else "#")
+        brython_div1 <= " | " + html.A("repo", href="https://github.com/mdecd2025/hw-" + str(github) if github else "#")
+        brython_div1 <= html.BR()
+
+# 顯示尚未分組的學員，針對 2a 分組
+display_unassigned_members("https://mde.tw/list/2a.txt")
+
+# 顯示尚未分組的學員，針對 2b 分組
+display_unassigned_members("https://mde.tw/list/2b.txt")
+</script>
+</p>
+<p><!-- add 1 to 100 結束--></p>
+<p><!-- editor1 開始 --></p>
+<p><!-- 用來顯示程式碼的 editor 區域 --></p>
+<div id="kw_editor1">
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 用來顯示未分組的學員
+def display_unassigned_members(url):
+    # 讀取檔案中的學員資料
+    data = open(url).readlines()
+
+    # 篩選出有效資料（跳過標題）
+    all_stud = data[1:]
+
+    # 找出尚未分組的學員，假設分組的學員在 github 帳號或學號中有某個特徵
+    unassigned_stud = []
+
+    for i in all_stud:
+        stud = i.split("\t")
+        stud_num = stud[0]
+        github = stud[1]
+
+        # 假設如果學員的 github 帳號或學號為空，代表未分組
+        if not github or github.strip() == "":  # 假設空的帳號代表未分組
+            unassigned_stud.append((stud_num, github))
+
+    # 顯示未分組學員
+    brython_div1 = document["brython_div1"]
+    brython_div1 &lt;= html.H2("尚未分組的學員")
+
+    count = 0
+    for stud_num, github in unassigned_stud:
+        count += 1
+        brython_div1 &lt;= str(count) + ". " + html.A(str(stud_num), href="https://mdecd2025.github.io/hw-" + str(github) if github else "#")
+        brython_div1 &lt;= " | " + html.A("repo", href="https://github.com/mdecd2025/hw-" + str(github) if github else "#")
+        brython_div1 &lt;= html.BR()
+    </pre>
+</div>
+<p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
+<p><!-- 存擋表單開始 --></p>
+<form><label>Filename: <input id="kw_filename" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src1', 'kw_filename1');" type="submit" value="Save"/></form>
+<p><!-- 存擋表單結束 --></p>
+<p><!-- 執行與清除按鈕開始 --></p>
+<p><button id="kw_run1">Run</button> <button id="kw_show_console1">Output</button> <button id="kw_clear_console1">清除輸出區</button><button id="clear_bd1">清除繪圖區</button><button onclick="window.location.reload()">Reload</button></p>
+<p><!-- 執行與清除按鈕結束 --></p>
+<p><!-- 程式執行 ouput 區 --></p>
+<div><textarea autocomplete="off" id="kw_console1"></textarea></div>
+<div> </div>
+<br />Task2 << <a href='Task2.html'>Previous</a> <a href='task3.html'>Next</a> >> task3</div>
         
     <!-- footer -->
       <div class="container">
