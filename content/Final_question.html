@@ -1,274 +1,148 @@
-<h1>About</h1>
-<p>課程名稱: 協同產品設計實習 - Collaborative Product Design Practice</p>
-<p>學員作業網站:<a href="https://mdecd2025.github.io/hw-CYG41223103">https://mdecd2025.github.io/hw-CYG41223103</a></p>
-<p>學員作業倉儲:<a href="https://github.com/mdecd2025/hw-CYG41223103">https://github.com/mdecd2025/hw-CYG41223103</a></p>
-<hr/>
-<p>課程代號: cd2025</p>
-<p>Teams 線上教學:</p>
-<p style="padding-left: 30px;">以 "學號@nfu.edu.tw" 登入<span> </span><a href="https://login.microsoftonline.com/">https://login.microsoftonline.com/</a><span> </span>Office 365</p>
-<p style="padding-left: 30px;">Teams 團隊代碼: <span>p5z4eku</span></p>
-<hr/>
-<p>課程評分:</p>
-<p style="padding-left: 30px;">Homework (30%) - 每週至少提交兩次與課程進度有關的內容, 完成後填回自評表單</p>
-<p style="padding-left: 30px;">Exam (40%) - 建立包含操作流程影片、心得以及提供檔案下載的網頁後填回自評表單</p>
-<p style="padding-left: 30px;">Final Report (30%) - 利用網頁內容進行簡報並提交 pdf 格式書面報告, 完成後填回自評表單</p>
-<h1>Tasks</h1>
-<h2>Task2</h2>
-<h3>W3</h3>
-<p><a href="https://mdecd2025.github.io/hw-scrum-1/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9f3df9d865a7ceca8e799ee9b1a31602/raw/113a3d7e19b36a7672a136f3731ef07b095adeef/list_2a.py">列出 2a 學員作業網站與倉儲連結</a></p>
-<p><a href="https://mdecd2025.github.io/hw-scrum-1/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9f3df9d865a7ceca8e799ee9b1a31602/raw/29173e8b73ad422fd7c44bcd93658a3579d63633/list_stage_3.py">列出 2b 學員作業網站與倉儲連結</a></p>
-<p><a href="https://mdecd2025.github.io/hw-scrum-1/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9f3df9d865a7ceca8e799ee9b1a31602/raw/a4414e311503fac8d57d4f5e44999147c54cf7fa/list_2a_group.py">列出 2a 分組網站與倉儲連結</a></p>
-<p><a href="https://mdecd2025.github.io/hw-scrum-1/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9f3df9d865a7ceca8e799ee9b1a31602/raw/a4414e311503fac8d57d4f5e44999147c54cf7fa/list_2b_group.py">列出 2b 分組網站與倉儲連結</a></p>
-<hr/>
-<p><span>請列出各組目前尚未納入分組的學員名單</span></p>
-<p><button id="add1to100">1 add to 100</button></p>
-<p><!-- 導入 brython 程式庫 --></p>
-<p>
-<script src="/static/brython.js"></script>
-<script src="/static/brython_stdlib.js"></script>
-</p>
-<p><!-- 啟動 Brython --></p>
-<p>
-<script>
-window.onload=function(){
-    brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
+<!DOCTYPE html><html>
+        <head>
+        <title>cd_hw</title>
+        <meta charset="utf-8">
+<meta property="head" content="H2">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushWbt.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
 }
-</script>
-</p>
-<p><!-- 請注意, 這裡使用 Javascript 將 localStorage["kw_py_src1"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
-<p>
-<script type="text/javascript">
-function doSave(storage_id, filename){
-    var blob = new Blob([localStorage[storage_id]], {type: "text/plain;charset=utf-8"});
-    filename = document.getElementById(filename).value
-    saveAs(blob, filename+".py");
-}
-</script>
-</p>
-<p><!-- add 1 to 100 開始 -->
-<script type="text/python3">
-from browser import document as doc, html
+</style>
 
-# 用來顯示未分組的學員
-def display_unassigned_members(url):
-    # 讀取檔案中的學員資料
-    data = open(url).readlines()
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
 
-    # 篩選出有效資料（跳過標題）
-    all_stud = data[1:]
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>CYG41223103 - cd2025 協同產品設計實習學員網站</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">CYG41223103 - cd2025 協同產品設計實習學員網站</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">SMap</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='Tasks.html'>Tasks</a><ul class='dropdown'><li class='has-children'><a href='Task2.html'>Task2</a><ul class='dropdown'><li><a href='W3.html'>W3</a></li></ul><li><a href='Task3.html'>Task3</a><li><a href='Task5.html'>Task5</a></li></ul><li class='has-children'><a href='Homework.html'>Homework</a><ul class='dropdown'><li><a href='HW1.html'>HW1</a><li><a href='HW2.html'>HW2</a><li><a href='HW3.html'>HW3</a></li></ul><li><a href='Midterm.html'>Midterm</a><li class='has-children'><a href='Exam.html'>Exam</a><ul class='dropdown'><li><a href='Exam1.html'>Exam1</a><li><a href='Exam2.html'>Exam2</a><li><a href='Exam3.html'>Exam3</a></li></ul><li class='has-children'><a href='Final.html'>Final</a><ul class='dropdown'><li><a href='Final_question.html'>Final_question</a></li></ul><li><a href='Brython.html'>Brython</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
 
-    # 找出尚未分組的學員，假設分組的學員在 github 帳號或學號中有某個特徵
-    unassigned_stud = []
-
-    for i in all_stud:
-        stud = i.split("\t")
-        stud_num = stud[0]
-        github = stud[1]
-
-        # 假設如果學員的 github 帳號或學號為空，代表未分組
-        if not github or github.strip() == "":  # 假設空的帳號代表未分組
-            unassigned_stud.append((stud_num, github))
-
-    # 顯示未分組學員
-    brython_div1 = document["brython_div1"]
-    brython_div1 <= html.H2("尚未分組的學員")
-
-    count = 0
-    for stud_num, github in unassigned_stud:
-        count += 1
-        brython_div1 <= str(count) + ". " + html.A(str(stud_num), href="https://mdecd2025.github.io/hw-" + str(github) if github else "#")
-        brython_div1 <= " | " + html.A("repo", href="https://github.com/mdecd2025/hw-" + str(github) if github else "#")
-        brython_div1 <= html.BR()
-
-# 顯示尚未分組的學員，針對 2a 分組
-display_unassigned_members("https://mde.tw/list/2a.txt")
-
-# 顯示尚未分組的學員，針對 2b 分組
-display_unassigned_members("https://mde.tw/list/2b.txt")
-</script>
-</p>
-<p><!-- add 1 to 100 結束--></p>
-<p><!-- editor1 開始 --></p>
-<p><!-- 用來顯示程式碼的 editor 區域 --></p>
-<div id="kw_editor1">
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 用來顯示未分組的學員
-def display_unassigned_members(url):
-    # 讀取檔案中的學員資料
-    data = open(url).readlines()
-
-    # 篩選出有效資料（跳過標題）
-    all_stud = data[1:]
-
-    # 找出尚未分組的學員，假設分組的學員在 github 帳號或學號中有某個特徵
-    unassigned_stud = []
-
-    for i in all_stud:
-        stud = i.split("\t")
-        stud_num = stud[0]
-        github = stud[1]
-
-        # 假設如果學員的 github 帳號或學號為空，代表未分組
-        if not github or github.strip() == "":  # 假設空的帳號代表未分組
-            unassigned_stud.append((stud_num, github))
-
-    # 顯示未分組學員
-    brython_div1 = document["brython_div1"]
-    brython_div1 &lt;= html.H2("尚未分組的學員")
-
-    count = 0
-    for stud_num, github in unassigned_stud:
-        count += 1
-        brython_div1 &lt;= str(count) + ". " + html.A(str(stud_num), href="https://mdecd2025.github.io/hw-" + str(github) if github else "#")
-        brython_div1 &lt;= " | " + html.A("repo", href="https://github.com/mdecd2025/hw-" + str(github) if github else "#")
-        brython_div1 &lt;= html.BR()
-    </pre>
-</div>
-<p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
-<p><!-- 存擋表單開始 --></p>
-<form><label>Filename: <input id="kw_filename" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src1', 'kw_filename1');" type="submit" value="Save"/></form>
-<p><!-- 存擋表單結束 --></p>
-<p><!-- 執行與清除按鈕開始 --></p>
-<p><button id="kw_run1">Run</button> <button id="kw_show_console1">Output</button> <button id="kw_clear_console1">清除輸出區</button><button id="clear_bd1">清除繪圖區</button><button onclick="window.location.reload()">Reload</button></p>
-<p><!-- 執行與清除按鈕結束 --></p>
-<p><!-- 程式執行 ouput 區 --></p>
-<div><textarea autocomplete="off" id="kw_console1"></textarea></div>
-<div> </div>
-<h2>Task3</h2>
-<p><span>使用 Solvespace 建立平面四連桿系統零組件 (HW2)</span></p>
-<h2>Task5</h2>
-<p>1. Webots介紹：Webots 是一款開源的機器人仿真軟體，提供了強大的圖形介面，幫助用戶創建和模擬各種機器人及其環境。用戶可以設計機器人、建立仿真環境、進行測試，並進行機器人程式設計，支援多種機器人及感測器模組。</p>
-<p>2. <br/>重要單字與用法：<br/>Simulation (名詞)：指模擬過程，表示在虛擬環境中重現現實世界的情境。例子："robot simulation"（機器人模擬）。<br/>Controller (名詞)：控制機器人行為的程式。例子："The robot controller is written in Python."（機器人的控制器是用 Python 編寫的）。<br/>Environment (名詞)：機器人運行的虛擬或物理世界。例子："The environment can contain various objects."（該環境可以包含各種物體）</p>
-<p><br/>文法說明：<br/>Simulation：作為名詞，通常與動詞 "perform" 或 "create" 連用。例如 "perform a simulation"（進行模擬）或 "create a simulation"（創建模擬）。<br/>Controller：在句中多用作主語或賓語，如 "is written"（被寫成）表示被動語態，突出程式本身而非編寫者。<br/>Environment：通常用來表示場所或範圍，如 "the environment can contain"（環境可以包含），這是一種表示能力或可能性的句型，使用 "can" 表示可行或有可能的動作。</p>
-<p>3. </p>
-<p>Webots is an open-source robot simulation software that allows users to create 3D virtual worlds with physical properties for testing different types of robots, such as wheeled, legged, or flying robots. It supports various sensors and actuators. Webots is widely used in academic research, education, and industries. It also allows transferring simulations to real robots, such as e-puck or Nao. The platform supports programming in multiple languages like C, C++, Python, Java, and MATLAB.</p>
-<p>For more details, visit the Webots Introduction.</p>
-<p></p>
-<p>4. </p>
-<p>重要單字與解釋：<br/>Open-source (形容詞)：開源的，指軟體源碼公開，允許用戶自由修改和分發。</p>
-<p>用法：在句中通常用來描述軟體的開放性，如 "Webots is an open-source robot simulation software."<br/>Simulation (名詞)：模擬，指用電腦創建的虛擬環境來重現現實世界情境。</p>
-<p>用法：例如 "robot simulation"（機器人模擬）描述模擬過程。<br/>Actuators (名詞)：執行器，指機器人內部用於執行物理動作的裝置。</p>
-<p>用法：如 "supports various sensors and actuators"（支援各種感測器和執行器）中，表示 Webots 平台的功能。<br/>Interface (名詞)：介面，指使兩個系統或裝置相互連接的界面。</p>
-<p>用法：例如 "Webots also allows transferring simulations to real robots"（Webots 也允許將模擬轉移到真實機器人），強調與實際機器人之間的連接。</p>
-<p><br/>句子文法解釋：<br/>Open-source：用來描述 Webots 軟體的性質，指其是開放源碼的。<br/>Simulation：作為名詞，與動詞 "create"（創建）或 "perform"（執行）搭配使用，表示模擬過程或操作。<br/>Actuators：在句中作為名詞，表達 Webots 支援的硬體元件之一。<br/>Interface：表示系統或工具間的連接方式，這裡強調了虛擬與真實機器人之間的連結。</p>
-<p></p>
-<p>5. 建立場景：<br/>1.<span>)</span>開啟 Webots，選擇 File &gt; New World 來創建新場景。<br/>2.<span>)</span>使用左側工具欄中的 Add Node 按鈕，將機器人或物體加入到場景中。<br/>3.<span>)</span>配置機器人或物體的位置、大小和屬性。可使用 View 工具來查看場景的不同角度。<br/>4.<span>)</span>為機器人設置控制器和感測器，確保其能夠進行所需的運作。<br/>5.)保存場景並按 Run 按鈕進行測試。</p>
-<p>注意：確保每個元素的物理參數配置正確，並測試機器人的行為以確保其運行如預期。</p>
-<p>6. 手動建立場景：<br/>1.)開啟 Webots，選擇“File” &gt; “New World”來創建新的場景。<br/><span>2.)</span>從左側選擇“Add Node”來添加不同的場景元素（如地面、障礙物、機器人等）。<br/><span>3.)</span>根據需求調整機器人的參數，並設定所需的感測器。<br/><span>4.)</span>最後保存並運行場景。</p>
-<p>*注意要點：在創建過程中，確保每個元素正確配置（如機器人的動作、感測器的範圍等），並對場景進行測試。</p>
-<h1>Homework</h1>
-<p>作業 (30%)</p>
-<p>HW1 (5%): <span style="background-color: #ffff00;">建立由 Box 組成的平面四連桿機構 Webots 模擬場景</span></p>
-<p style="padding-left: 30px;">part1:</p>
-<p style="padding-left: 60px;">請各學員在 USB 隨身碟或個人電腦上完成 cd2025 課程所需的可攜系統配置:</p>
-<p style="padding-left: 90px;">下載 <a href="http://229.cycu.org/portable_wcm2025.7z">portable_wcm2025.7z</a> (330MB, 解開壓縮後 1.4GB)</p>
-<p style="padding-left: 90px;"><a href="http://229.cycu.org/Webots_2025a.7z">Webots_2025a.7z</a> (1.5 GB, 解開後約為 2.9GB, 可單獨運作)</p>
-<p style="padding-left: 90px;"><a href="http://229.cycu.org/Webots_2025a_web.7z">Webots_2025a_web.7z</a> (171 MB, 解開壓縮後約為 1GB, 必須連網運作)</p>
-<p style="padding-left: 90px;"><a href="http://229.cycu.org/Blender4.2.7z">Blender4.2.7z</a></p>
-<p style="padding-left: 30px;">part2:</p>
-<p style="padding-left: 60px;">請各學員完成可攜程式系統配置後, 利用 Webots R2025a 中寬度與高度都為 0.1m 的 box 物件建立一個簡單的平面四連桿機構模擬場景.</p>
-<p style="padding-left: 60px;">base (基座) 長度 1m, link1 長度 0.4m, link2 長度 0.6m, link3 長度 0.9m, 各轉軸均為 HingeJoint, joint1 旋轉速度設定為 1radian/sec.</p>
-<p style="padding-left: 30px;">part3:</p>
-<p style="padding-left: 60px;">模擬場景啟動後, 按下 s 鍵機構開始作動, 按下 p 鍵後機構暫停.</p>
-<p style="padding-left: 30px;">參考資料:</p>
-<p style="padding-left: 60px;"><a href="/downloads/cd2025_hw1_demo.7z">cd2025_hw1_demo.7z</a></p>
-<p>HW2 (5%): <span style="background-color: #ffff00;">建立由 CAD 繪製零件組成的平面四連桿機構 Webots 模擬場景</span></p>
-<p style="padding-left: 30px;">各學員請利用 CAD 系統依據 HW1 的連桿尺寸與運動方式, 配置適當大小的旋轉軸以及基座後, 利用 Webots R2025a 完成一個簡單的平面四連桿機構模擬場景.</p>
-<p style="padding-left: 30px;">參考資料:</p>
-<p style="padding-left: 60px;"><a href="/downloads/fourbar_slvs.7z">fourbar_slvs.7z</a></p>
-<p>HW3 (20%):<span style="background-color: #ffff00;">建立 Webots 桌上籃球遊戲機模擬系統</span></p>
-<p style="padding-left: 30px;">請各分組利用CAD 系統建立一個能在電腦桌 (1600W X 700D X 740H mm) 上運作的投籃機構 (<a href="https://www.youtube.com/watch?v=LloG_Jn_TI0&amp;t=51s">參考影片</a>)後, 導入 Webots R2025a 套件, 建立一個能由使用者透過鍵盤按鍵操作, 且具備計分板的籃球遊戲機模擬系統.</p>
-<p style="padding-left: 30px;">參考資料:</p>
-<p>參考資料:</p>
-<p style="padding-left: 30px;"><a href="/downloads/fourbar_ball_throwing_linkage.slvs">fourbar_ball_throwing_linkage.slvs</a></p>
-<p style="padding-left: 30px;"><a href="/downloads/sixbar_ball_throwing_linkage.slvs">sixbar_ball_throwing_linkage.slvs</a></p>
-<p style="padding-left: 30px;"><img alt="" height="264" src="/images/fourbar_ball_throwing_linkage.gif" width="400"/></p>
-<h2>HW1</h2>
-<p>HW1 (5%): <span style="background-color: #ffff00;">建立由 Box 組成的平面四連桿機構 Webots 模擬場景</span></p>
-<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" frameborder="0" height="315" src="https://www.youtube.com/embed/13GCsrt1O2I" width="560"></iframe></p>
-<p><span>繪製link 1~3</span></p>
-<!-- 嵌入影片 -->
-<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/lQHko61FfuA" width="560"></iframe></p>
-<p><span>繪製base-1</span></p>
-<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/4yY6OIDMQeM" width="560"></iframe></p>
-<p><span>繪製bfourbar_linkage_design-1</span></p>
-<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/AtAjMcHqCRo" width="560"></iframe> <br/> <span>繪製shaft-1~2</span></p>
-<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/NW9bV3wWZGU" width="560"></iframe> <br/> <span>繪製fourbar_linkage_design_w_assembiy</span></p>
-<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/VTnYg11kCtI" width="560"></iframe></p>
-<h2>HW2</h2>
-<p>HW2 (5%): <span style="background-color: #ffff00;">建立由 CAD 繪製零件組成的平面四連桿機構 Webots 模擬場景</span></p>
-<p>操作影片標題: 國立虎尾科技大學 - 機械設計工程系 - cd2025 HW2 - 學員學號</p>
-<p>:package: <a download="" href="https://github.com/mdecd2025/hw-CYG41223103/raw/main/HW2.zip">下載 HW2.zip</a></p>
-<!-- 嵌入影片 -->
-<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/HP7nMO6skyA" width="560"></iframe></p>
-<!-- 嵌入影片 -->
-<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/GE2VXhQOm8E" width="560"></iframe></p>
-<p></p>
-<p><span>繪製link 1~3</span></p>
-<!-- 嵌入影片 -->
-<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/lQHko61FfuA" width="560"></iframe></p>
-<p><span>繪製base-1</span></p>
-<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/4yY6OIDMQeM" width="560"></iframe></p>
-<p><span>繪製bfourbar_linkage_design-1</span></p>
-<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/AtAjMcHqCRo" width="560"></iframe></p>
-<p><span>繪製shaft-1~2</span></p>
-<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/NW9bV3wWZGU" width="560"></iframe></p>
-<p><span>繪製fourbar_linkage_design_w_assembiy</span></p>
-<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/VTnYg11kCtI" width="560"></iframe></p>
-<h2>HW3</h2>
-<p>HW3 (20%):<span style="background-color: #ffff00;">建立 Webots 桌上籃球遊戲機模擬系統</span></p>
-<p>操作影片標題: 國立虎尾科技大學 - 機械設計工程系 - cd2025 HW3 - 學員學號</p>
-<p></p>
-<h1>Midterm</h1>
-<p>本課程所繳交的期中成績為學員自評之學習期望成績.</p>
-<p>期中考週的自評期望成績繳交流程:</p>
-<ol>
-<li>整理先前所完成的各週的進度、作業網頁內容以及心得</li>
-<li>拍攝期中自評影片, 上傳至 Youtube 後, 以"<span style="background-color: #ffff00;">國立虎尾科技大學 - 機械設計工程系 - cd2025 期中自評- 學員學號</span>"為影片標題後嵌入本頁面中</li>
-<li>回填期中自評表單</li>
-<li>上傳學員期中成績</li>
-</ol>
-<p>各週進度:</p>
-<p>各週網頁內容:</p>
-<p>期中心得:</p>
-<p>期中自評影片:</p>
-<p></p>
-<p style="padding-left: 30px;"></p>
-<h1>Exam</h1>
-<p>Exam1 (10%): 建立 Webots 基本物件模擬場景</p>
-<p style="padding-left: 30px;">各學員利用 Webots R2025a 套件中的 Shape 物件, 隨堂建立指定的機電系統模擬場景, 並利用 Python 程式進行互動控制.</p>
-<p>Exam2 (10%): 利用 CAD 零組件建立模擬場景 </p>
-<p style="padding-left: 30px;">各學員利用 CAD (Solvespace 與 NX2312), 隨堂建立指定的系統模型零組件後, 導入 Webots R2025a 後, 建立機電系統模擬場景, 並利用 Python 程式進行互動控制.</p>
-<p>Exam3 (20%): Webots 機電模擬場景的協同設計</p>
-<p style="padding-left: 30px;">各分組利用 CAD (Solvespace 與 NX2312), 隨堂建立指定的系統模型零組件後, 導入 Webots R2025a 後, 建立機電系統模擬場景, 並利用 Python 程式進行互動控制. 過程中各學員必須採同步協同模式, 維護從 Github Classroom 取得的分組協同倉儲以及網站.</p>
-<p style="padding-left: 30px;">協同分組方式:</p>
-<ol>
-<li>分配學員負責利用 Solvespace 建立系統零組件, 過程中必須將所建構之零組件檔案與繪圖過程影片上傳至分組網頁.</li>
-<li>分配學員負責利用 NX2312 建立系統零組件, 過程中必須將所建構之零組件檔案與繪圖過程影片上傳至分組網頁.</li>
-<li>分配學員負責利用 Webots 建立機電系統模擬場景, 並利用 Python 程式進行控制, 過程中必須將建構過程拍成帶有說明字幕的影片上傳至分組網頁.</li>
-</ol>
-<h2>Exam1</h2>
-<p>Exam1 (10%): 建立 Webots 基本物件模擬場景</p>
-<p>操作影片標題: 國立虎尾科技大學 - 機械設計工程系 - cd2025 Exam1 - 學員學號</p>
-<p>📦 <a download="" href="https://github.com/mdecd2025/hw-CYG41223103/raw/main/Exam1.zip">下載 Exam1.zip</a></p>
-<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/Sa2WSGWcJ_Y" width="560"></iframe></p>
-<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/PkBN0rmB-pE" width="560"></iframe></p>
-<h2>Exam2</h2>
-<p>Exam2 (10%): 利用 CAD 零組件建立模擬場景</p>
-<p>操作影片標題: 國立虎尾科技大學 - 機械設計工程系 - cd2025 Exam2 - 學員學號</p>
-<p></p>
-<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" frameborder="0" height="315" src="https://www.youtube.com/embed/FysLEKh8t6c" width="560"></iframe></p>
-<h2>Exam3</h2>
-<p>Exam3 (20%): Webots 機電模擬場景的協同設計</p>
-<p>操作影片標題: 國立虎尾科技大學 - 機械設計工程系 - cd2025 Exam3 - 學員學號</p>
-<h1>Final</h1>
-<p><span>期末協同專案執行過程影片、簡報與 PDf 報告檔案 (六人一組) (30%)</span></p>
-<p><span>題目: <span style="background-color: #ccffcc;">Webots 動態投籃模擬系統的協同設計</span></span></p>
-<p><span>說明: </span></p>
-<p style="padding-left: 30px;"><span>籃框架被配置在一定範圍內, 可隨機慢速前進、後退及左右擺動, 投籃機構系統帶有一定數量的籃球, 被配置在可自由移動的輪車上.</span></p>
-<p style="padding-left: 30px;"><span>操作者可利用鍵盤特定按鍵控制投籃輪車的移動並發射投籃, 每投出一球後系統透過記分板進行計分, 並由送球機構進行補球或移動輪車取球, 遊戲可進行至全部數量籃球投完為止.</span></p>
-<p>請將期末協同專案執行過程、內容與心得, 製作成影片，配合字幕上傳至 Youtube 後嵌入各階段的期末報告頁面中.</p>
-<p>影片標題: <span style="background-color: #ffff00;">國立虎尾科技大學 - 機械設計工程系 - cd2025 期末報告 - 學員學號 - 各階段影片主題</span></p>
-<h2>Final_question</h2>
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Final << <a href='Final.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython<br /><h1>Final_question</h1>
 <div><span data-canva-clipboard="ewAiAGEAIgA6ADUALAAiAGgAIgA6ACIAdwB3AHcALgBjAGEAbgB2AGEALgBjAG8AbQAiACwAIgBjACIAOgAiAEQAQQBHAHIARQBCAGsAdwBLAG4ARQAiACwAIgBpACIAOgAiAEYAbABwAHQAaABTAFIAYwA3AGcAbgBSAHgAYgBEAGsAeAB5ADUAegBQAEEAIgAsACIAYgAiADoAMQA3ADUAMAA1ADgAMgAyADAANQA2ADkAMwAsACIAQQA/ACIAOgAiAEUAIgAsACIAQQAiADoAewAiAEEAIgA6AFsAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADEALgAgACxnVFMMVAhcSGiEdu52GWoHgjtOgYmfUv2AunBVTx//IgB9ACwAIgBCACIAOgB7ACIAQQAiADoAIgBZAEEARwBpADIAagBGAHYAdgBxADQALAAxACIALAAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBLACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiACFq7GSVYkN8SpAyYgz/5lv+cyAAeQBvAHUAQgBvAHQAIAAqj8qOp2M2UgEwlWJDfF9qy2nNZFxPATBDfEZo+3nVUgEw3IgDdAEwCIoGUgEwb5g6eQeCdZPkdi8A6oHVUs1kXE90ZQhUAjAiAH0ALAAiAEIAIgA6AHsAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEEAPwAiADoAIgBCAF8AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIASwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAyAC4AIAA0WG9mLU4FUytU6lR+XgtQO06BiVBb+3xxfRZiIWpEfR//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAlWJDfCqPyo4gACgAeQBvAHUAQgBvAHQAKQAiAH0ALAAiAEIAIgA6AHsAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEwAIgA6ACIAZABlAGMAaQBtAGEAbAAiACwAIgBNACIAOgAiADEALgAwACIALAAiAEEAPwAiADoAIgBCAF8AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIASwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgCVYkN8X2rLaSIAfQAsACIAQgAiADoAewAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIASwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBDfEZotmcI/3MAdABhAG4AZAAJ/yIAfQAsACIAQgAiADoAewAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIASwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBDfAN0A3TUmiIAfQAsACIAQgAiADoAewAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIASwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAYigZS+3xxfSIAfQAsACIAQgAiADoAewAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIASwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgCnYzZSaFYI/0ti1VIHguqB1VIJ/yIAfQAsACIAQgAiADoAewAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIASwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgDciAN0+3xxfSIAfQAsACIAQgAiADoAewAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIASwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgCzUDiPGpAKigj/RQBtAGkAdAB0AGUAcgAvAFIAZQBjAGUAaQB2AGUAcgAJ/yIAfQAsACIAQgAiADoAewAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIASwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAzAC4AIACCWVVPKFcgAFcAZQBiAG8AdABzACAALU76Xst6AE4LUO9T+3nVUoR2lWJDfCqPyo4f/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQAsACIAQwAiADoAewAiAEwAIgA6AHQAcgB1AGUALAAiAE0AIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIA0mNlUSAAeQBvAHUAQgBvAHQAIACSISAAoFLdiCAAUgBvAHQAYQB0AGkAbwBuAGEAbABNAG8AdABvAHIAIACnYzZS21YqjyAAkiEgAIlb3YggAEgAaQBuAGcAZQBKAG8AaQBuAHQAIABcT7pwlWJDfNyVwHsgAJIhIACwZOtbIABjAG8AbgB0AHIAbwBsAGwAZQByACAAp2M2UnZR+3nVUgeClWJDfAIwIgB9ACwAIgBCACIAOgB7ACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIANAAuACAAQ3xGaLZnhHb7edVSIWoPXy9mgllVTy2KCIoHguZb/nOEdh//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAf08odSAAUgBvAGIAbwB0ACAAXpiLVxZiIABTAHUAcABlAHIAdgBpAHMAbwByACAAp2M2Ugz/z2sLUCAAdABpAG0AZQBzAHQAZQBwACAAqJZfaiJ1H3XudhlqTU9ufwz/D5BOkCAAUABvAHMAaQB0AGkAbwBuACAALYqaW+Zb/nNiYR+Q+3nVUgIwIgB9ACwAIgBCACIAOgB7ACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIANQAuACAAlWJDfCqPyo6Edvt51VKnYzZSB4J8dgRcn1L9gAZSJVIxdepUm07diG5/RH0QYh//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIA+3nVUhr/UgBvAHQAYQB0AGkAbwBuAGEAbABNAG8AdABvAHIAIAB4ADQAIAArACAAUABvAHMAaQB0AGkAbwBuAFMAZQBuAHMAbwByACAAeAA0ACIAfQAsACIAQgAiADoAewAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIATAAiADoAIgBkAGkAcwBjACIALAAiAE0AIgA6ACIAMQAuADAAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBLACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAHx2BFwa/0gAaQBuAGcAZQBKAG8AaQBuAHQAIAArACAAUgBvAHQAYQB0AGkAbwBuAGEAbABNAG8AdABvAHIAIAArACAA3Y3ili8ATU9ufx9hLG5oViIAfQAsACIAQgAiADoAewAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIASwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA2AC4AIACCWVVPLYqaW5ViQ3wqj8qOhHYdUstZTU9ufweCUJY2UnZRO23VUsR7DVcf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQAsACIAQwAiADoAewAiAEwAIgA6AHQAcgB1AGUALAAiAE0AIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAvGUgAC4AdwBiAHQAIAAtTi2KmlsgAHQAcgBhAG4AcwBsAGEAdABpAG8AbgAgAIxUIAByAG8AdABhAHQAaQBvAG4AG/+8ZSAAYwBvAG4AdAByAG8AbABsAGUAcgAgAClSKHUgAEcAUABTACAAJFK3ZadeGWrEew1XDP/qgdVSUJY2UiAAeQBvAHUAQgBvAHQAIAANTvpRTHUCMCIAfQAsACIAQgAiADoAewAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBLACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADcALgAgAEN8A3SCWVVPvGU0WG9mLU76Xst6ATB4Zc+RgllVTy2Kmlsf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBLACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAH9PKHUgAFMAbwBsAGkAZAAgAMB73p76Xst6A3TUmgz/LYqaWyAAYgBvAHUAbgBkAGkAbgBnAE8AYgBqAGUAYwB0AAEwcABoAHkAcwBpAGMAcwAgAEl7bFwnYAIw71MHif2IGlkLUAEwX07vUyh1IABTAHUAcABlAHIAdgBpAHMAbwByACAAC3oPXyJ1H3UCMCIAfQAsACIAQgAiADoAewAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBLACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADgALgAgAIJZVU8tigiKJk7mW1xPQ3wDdIR23IgDdBZi3lY2ZQj/AZADdAn/X2rLaR//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIALYoIigGQA3TMjlOQCP/Rbv1pCf8BMF9qsGhLYsKBFmJJj+R2DP8tZE2RIABEAGkAcwB0AGEAbgBjAGUAUwBlAG4AcwBvAHIAIAAkUrdlIAB5AG8AdQBCAG8AdAAgAC9mJlQxXNJ9DP9/Tyh1IABNAG8AdABvAHIAIACnYzZSAZADdAIwIgB9ACwAIgBCACIAOgB7ACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAOQAuACAAlWJDfNVSXE8vZoJZVU8xdadjNlJoVgt6D1/4iXx2B4L3V0yIhHYf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBLACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAAljC051k+R2fHYEXHWTjF8M/6djNlKVYkN8rJlUkAdc3JXAe0mP84F8dgRc0ommXpIh9l5ykJIhqV9NT5Iht1F7U0Jmk5WSIUFRMYoLTgBOIWt8dgRcAjAiAH0ALAAiAEIAIgA6AHsAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEEAPwAiADoAIgBCAF8AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIASwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAxADAALgAgAM1kXE8FgIJZVU8pUih1dZPkdqdjNlIqj8qO+3nVUspTlWJDfB//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAD5BOkCAAVwBlAGIAbwB0AHMAIACEdiAASwBlAHkAYgBvAGEAcgBkAC4AZwBlAHQASwBlAHkAKAApAAz/mlupf4JZGv8iAH0ALAAiAEIAIgA6AHsAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEEAPwAiADoAIgBCAF8AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIASwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBXAC8AQQAvAFMALwBEABr/TVLmXYxf81MiAH0ALAAiAEIAIgA6AHsAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEwAIgA6ACIAZABpAHMAYwAiACwAIgBNACIAOgAiADEALgAwACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAUQAvAEUAGv/LZUmPIgB9ACwAIgBCACIAOgB7ACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBLACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFMAcABhAGMAZQAa/5ViQ3x8dgRcIgB9ACwAIgBCACIAOgB7ACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBLACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADEAMQAuACAAlWJDfHx2BFxfastphHbclcB7B4KsmVSQgllVT02Rbn8HgkWa1VIf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQAsACIAQwAiADoAewAiAEwAIgA6AHQAcgB1AGUALAAiAE0AIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAZFxkXDJOpWMaWQtQIABIAGkAbgBnAGUASgBvAGkAbgB0AAz/i0+CWcKB+leSIaxiR1PCgZIhSF8EXMKBDP/Pa8B7MXUgAFIAbwB0AGEAdABpAG8AbgBhAGwATQBvAHQAbwByACAAp2M2UtVSXE8CMCIAfQAsACIAQgAiADoAewAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBLACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADEAMgAuACAAQ3xGaLZnhHaoll9qYmEfkPt51VIvZg5gvJ7mW/5zhHYf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBLACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAJpbQmYidR91qJZfaqdeGWrEew1XZ1GEdrBl7nYZak1Pbn8M/3Ne0W7SYzxQuWUPX6djNlJNT25/DP/PayAAcwB0AGUAcAAgAK5fv4pUkBBiYmEfkPt51VICMCIAfQAsACIAQgAiADoAewAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBLACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADEAMwAuACAAGIoGUn9nhHYtigiKj5Avjy9mwE68nh//gllVTyRSt2WXXwZSH/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIASwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgB2dQN0GpBOkEN8RmgLTrllH2EsbmhW+Il8dpIhs1AKivOBGIoGUqdjNlJoVpIhOWWKiwNOtWtvmDp5aFZvmDp5Z1G5WyZOoFIGUgIwIgB9ACwAIgBCACIAOgB7ACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAMQA0AC4AIABDfAN0MpBGaCRSt2V/Tyh1hk7qVJtOH2EsbmhWFmIUb5d71Wwf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBLACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAH9PKHUgAEQAaQBzAHQAYQBuAGMAZQBTAGUAbgBzAG8AcgABMFQAbwB1AGMAaABTAGUAbgBzAG8AcgABMBZiA3QakE6QRmgLTklRH2EI/+9TunAgAEQAaQBzAHQAYQBuAGMAZQBTAGUAbgBzAG8AcgAgAMBoS23td92N4pYJ/4ZPdVAsbn1ULU4CMCIAfQAsACIAQgAiADoAewAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBLACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADEANQAuACAAlWJDfCqPyo4HgkN8Rmi2Z4R2sHieZC2KmluCWVVPv4p0ZR//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAvGUEVGly9k4tippbIABiAG8AdQBuAGQAaQBuAGcATwBiAGoAZQBjAHQAATDqjM+RATBpZOZkB4IgAHAAaAB5AHMAaQBjAHMAIABsXCdgDP+/inRlpWP4ic1TyWEHgkhf841IZZxnAjAiAH0ALAAiAEIAIgA6AHsAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEEAPwAiADoAIgBCAF8AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIASwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAxADYALgAgAEN8Rmi2Z4R2TU9ufweCS5DVUsByS2GCWVVPq4gYigSTFmJvmDp5H/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIASwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgDvU7xlIABjAG8AbgB0AHIAbwBsAGwAZQByACAALU5wU/pRdlEgAEcAUABTACAATU9uf8eMCooM/xZi61tlUSAAbABvAGcAIACUakhoATBvmDp5KFc0WG9mhHYgAG8AdgBlAHIAbABhAHkAIAAKTgIwIgB9ACwAIgBCACIAOgB7ACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAMQA3AC4AIACVYkN8IWt4ZQeCaVIYmUN8A3R4ZS9mgllVT3F9CIoHgm+YOnmEdh//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAKFcgAGMAbwBuAHQAcgBvAGwAbABlAHIAIAAtTgB9BJOKi3hlDP/PayFrlWJDfBZi3IgDdIqL9GYM/yZOD5BOkCAANwAtAHMAZQBnAG0AZQBuAHQAIAAWYiAAdABlAHgAdAAgAG8AdgBlAHIAbABhAHkAIABvmDp59GawZQIwIgB9ACwAIgBCACIAOgB7ACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAMQA4AC4AIACVYkN8SpAyYlB9X2edaPZOhHYkUppbuWUPX7pwVU8f/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBLACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAO9TOWjaZBr/IgB9ACwAIgBCACIAOgB7ACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAQ3wDdBeA4XYiAH0ALAAiAEIAIgA6AHsAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEwAIgA6ACIAZABpAHMAYwAiACwAIgBNACIAOgAiADEALgAwACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAlWJDfCFreGVUkApOUJYiAH0ALAAiAEIAIgA6AHsAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAQmaTlRJQeGW6cPaWKCAgAHZ1JnsIVHNTUH1fZ0qQMmImTm+YOnlQfZxnAjAiAH0ALAAiAEIAIgA6AHsAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAMQA5AC4AIACCWVVPLYoIihpZ8FMqj8qOFmIaWQ1UzWRcTwWAVFMMVJViQ3wf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIASwAiADoAIgBjAGUAbgB0AGUAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQAsACIAQwAiADoAewAiAEwAIgA6AHQAcgB1AGUALAAiAE0AIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIA+l7LehpZC1AgAHkAbwB1AEIAbwB0ACAAwHvengz/z2sLUA1cyWENTgxUp2M2UmhWB4J1k+R2IGYEXAz/FmIPkE6QCopvYBqQCopUU7+KlWJDfAaYj14CMCIAfQAsACIAQgAiADoAewAiAEsAIgA6ACIAYwBlAG4AdABlAHIAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBLACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADIAMAAuACAANFhvZi1OBFREffZOhHZpcgZ0bFwnYAj/6ozPkQEwaWTmZEl7Cf+CWVVPv4p0ZR//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEsAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAKFfPawtQaXL2TsB73p4tToR2IABwAGgAeQBzAGkAYwBzACAABGtNTy2KmlsgAG0AYQBzAHMAATBmAHIAaQBjAHQAaQBvAG4ALAAgAHIAZQBzAHQAaQB0AHUAdABpAG8AbgAgAIZPv4p0ZWlyBnRIZZxnAjAiAH0ALAAiAEIAIgA6AHsAIgBLACIAOgAiAGMAZQBuAHQAZQByACIALAAiAEEAPwAiADoAIgBCAF8AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIASwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAyADEALgAgAFkAbwB1AEIAbwB0ACAAX2rLaYR221Yqj02Rbn8Hgvt51VKfUwZ0unBVTx//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAHkAbwB1AEIAbwB0ACAAoWModWhREVTbViqPDP8PkE6Q21YLUGhzy3qsmVSQp2M2Uu9TTVIykAEwjF8AkAEwdFD7eQeCy2VJjwIwD5BOkCqPH5BEfQhUInUfdQ1ODFS5ZRFU+3nVUgIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAMgAyAC4AIACVYkN8X2rLaYR2GlnclcB7LYoIigeCRZrVUo+QL48f/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgDPawtQ3JXAeyh1AE4LUCAASABpAG4AZwBlAEoAbwBpAG4AdAAgAC1kTZEgAFIAbwB0AGEAdABpAG8AbgBhAGwATQBvAHQAbwByACAAp2M2Ugz/C3oPXy1OmlupfwRU0ommXgeCQmaTlQaYj14M/4xbEGLLYmly2n0PX5ViQ3wCMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADIAMwAuACAAgllVT+Zb/nNDfAN03IgDdF9qy2mEduqB1VJ1UCxuB4LVUlxP+Il8dh//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAClSKHUgAEQAaQBzAHQAYQBuAGMAZQBTAGUAbgBzAG8AcgAgAHVQLG4gAHkAbwB1AEIAbwB0ACAACWchcaVjNmUDdE1Pbn8M/y1kTZH4iXx2i5XclQj/i5UIVNFu/WkJ/xZiGpAKilRTmlsI/1IAZQBjAGUAaQB2AGUAcgAJ/7NQA3QCMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADIANAAuACAAgllVTyhXIABXAGUAYgBvAHQAcwAgADRYb2YtTm+YOnlzU0JmCIoGUgeCaVIYmQN0eGUf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgB/Tyh1A061a2+YOnloVkNR9k4WYiAAbwB2AGUAcgBsAGEAeQAgAG+YOnmHZVdbDP9NkQhUGIoGUqdjNlJoVnNTQmb0ZrBlBlJ4ZQeCA3R4ZQIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAMgA1AC4AIACVYkN8TpALetVSa3UHgmlyBnQfd+ZbJ2CEdnNeYYjclXWTunBVTx//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAACXLWRNkdyVwHsfkKZeATBIXydgwk94ZQEwA3TqjM+RB4J6eiNsO5abUoR2w1N4ZS2KmlsM/3+QTVEDdEhfJ2BOkCdZFmINTuqBNnECMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADIANgAuACAAVFMMVC2KCIpOkAt6LU4M/0R94VSCWVVPBlLlXQhUXE8f/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAATiyC71OdTxr/+3nVUqdjNlIBMJViQ3whakR9ATDciAN0LYoIigEwGIoGUo+QL48BMDRYb2b6XstpATB0ZQhULG5migEwMVhKVLBk61sEVAZS5V0CMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADIANwAuACAACFxIaE6QC3qEdnFfR3IBMCF8MVgHgiAAUABEAEYAIAAxWEpUyWEFUytU6lSbTs2R3p4f/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAIXEhoIXzLTlwAbgD7fHF9LYoIihZXXABuAKdjNlKPkC+PQW0LehZXXABuACFq7GRVXDp5cV9HclwAbgBPVUyYB4LjiXpsXABuABBinGdVXDp5XABuAAZS5V0Hgs1THWBcAG4AIgB9ACwAIgBCACIAOgB7ACIATAAiADoAIgBkAGkAcwBjACIALAAiAE0AIgA6ACIAMQAuADAAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADIAOAAuACAAgllVTwdcCFxIaE6QC3pxX0dyTF1lUTFYSlSyfQGYH/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9ACwAIgBDACIAOgB7ACIATAAiADoAdAByAHUAZQAsACIATQAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgB/Tyh1IABIAFQATQBMACAAPABpAGYAcgBhAG0AZQAgAHMAcgBjAD0AXAAiAGgAdAB0AHAAcwA6AC8ALwB3AHcAdwAuAHkAbwB1AHQAdQBiAGUALgBjAG8AbQAvAGUAbQBiAGUAZAAvAHFfR3JJAEQAXAAiAD4AIACeitVsTF1lUQIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAMgA5AC4AIADlglRTDFTNZFxPTpALei1OfHYfdV2IgXoM/4JZVU9UU7+KB4LjiXpsH/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAD5BOkIuVA2cOitaKATB/Tyh1IABHAGkAdAAgAKF7BnRIcixnB4JdiIF6CFR1TwEwunjdTwRUuk6gjKyMIWpEfQ5mungGUuVdB4KkTqVjAjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAzADAALgAgAAhcSGhQfV9njF8M/4JZVU90ZQZ0w1+XXyZOzVNLmbxlsooLenNe8FMf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgCwZOtbw1+XXzFYSlQM/wVT7GJ4W9J/3p4BMBFjMGIBMDllMpD6XnCLDP8mTp1PZ3Gyigt6c17wUzxoD18KTrNQAjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAzADEALgAgAMuKz2PwjyAAeQBvAHUAQgBvAHQAIACVYkN8Ko/KjihXNFhvZi1OhHYdUstZp14ZageCHWcRVB//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiALxlIAAuAHcAYgB0ACAALU4tippbIAB0AHIAYQBuAHMAbABhAHQAaQBvAG4AIAC6cCAAWwB4ACAAeQAgAHoAXQAM/3IAbwB0AGEAdABpAG8AbgAgALpwIABbADAAIAAxACAAMAAgALgDXQAM/7p43U8dZxFUQ3xGaLllEVQCMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADMAMgAuACAANFhvZi1OhHYgAHkAbwB1AEIAbwB0ACAAlWJDfMqOjFRDfEZotmcgAHMAdABhAG4AZAAgAF9qaFa6TgRU6oGEdqdjNlJoVg1UMXovZsBOvJ4f/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgCLT4JZGv9cAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgB5AG8AdQBCAG8AdAAa/2IAYQBzAGsAZQB0AF8AYgBvAHQAXwBjAG8AbgB0AHIAbwBsAGwAZQByAFwAbgBzAHQAYQBuAGQAGv9iAGEAcwBrAGUAdABfAHMAdABhAG4AZABfAGMAbwBuAHQAcgBvAGwAbABlAHIAXABuACIAfQAsACIAQgAiADoAewAiAEwAIgA6ACIAZABpAHMAYwAiACwAIgBNACIAOgAiADEALgAwACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAMwAzAC4AIACCWVVPKFcgAFcAZQBiAG8AdABzACAANFhvZpRqSGgtTmNrungtim5/z2sLUCAAdwBoAGUAZQBsACAAhHYgAFIAbwB0AGEAdABpAG8AbgBhAGwATQBvAHQAbwByACAADVQxeh//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQAsACIAQwAiADoAewAiAEwAIgA6AHQAcgB1AGUALAAiAE0AIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAKFcgAHAAcgBvAHQAbwAgAGdR6JAWYuqBmlsgAHIAbwBiAG8AdAAgAC1OfVQNVAz/glka/3cAaABlAGUAbAAxAF8AbQBvAHQAbwByAAEwdwBoAGUAZQBsADIAXwBtAG8AdABvAHIADP9NkQhUp2M2UmhW1lOXX92Ibn8CMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADMANAAuACAAunDATryez2sLUCqPUFvBZYqQ/ZAtiglnIABQAG8AcwBpAHQAaQBvAG4AUwBlAG4AcwBvAHIAH/8odRSQunBVTx//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiACh1vGVzU0Jm43anYyqPH5AHgk1Pbn8M/1RTqVIgAFAASQBEACAAp2M2UgeCmltNT7+KdGUM/9Bj2Jr7edVSvnymXgeCMpZia1Ni0W4CMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADMANQAuACAAcoqCWVVPKVIodSAASQBNAFUAIACMVCAARwBQAFMAIACMWxBiIAB5AG8AdQBCAG8AdAAgAIR2mlvenvt51VIHgstlSY8f/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgB/Tyh1IABHAFAAUwAgACRSt2WnXhlqTU9ufwz/SQBNAFUAIAAkUrdlHWcRVNKJpl4CMC1kTZEgAFAASQBEACAAp2M2UgiKl3sAl4GJTIgykAeCy2VJj9KJAjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAzADYALgAgAIJZVU8tigiKIAB5AG8AdQBCAG8AdAAgAP2AIFm+fLp4dFD7eQdjmlvdjeKWH/8Leg9fCk6CWVVPJFK3Zft51VKMWxBiH/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIALYqaW+52GWqnXhlqkiGAi9ZTIABHAFAAUwAgAAFjjH7Uaw1cTU9uf5IhVJAwUqSK7l3Eew1XZ1FzU4xbEGJ0UPt5AjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAzADcALgAgAC9mJlRmik6Qk4sgAHkAbwB1AEIAbwB0ACAA6oHVUp5fd43envt51VIwUgdjmlunXhlqJk4dZxFU0Gfens5VH//PY/CPzWRcT2VrX5oCMCIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBla1+aGv9cAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgC6eI2Kd43LWSAARwBQAFMAXABuAC2KmlvudhlqTU9uf1wAbgApUih1EVTPkQiKl3v7edVSuWURVFwAbgBIUctlSY8dZxFU7nYZapIhjVH0dtp9TVIykFwAbgClY9GPjF+uX7+K0ommXlwAbgAiAH0ALAAiAEIAIgA6AHsAIgBMACIAOgAiAGQAZQBjAGkAbQBhAGwAIgAsACIATQAiADoAIgAxAC4AMAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADMAOAAuACAAKFenYzZSaFZnUQz/gllVT0BTBlJNUjKQATCMXwCQATDLZUmPATB0UPt5SXsNTgxU+3nVUiFqD18f/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0ALAAiAEMAIgA6AHsAIgBMACIAOgB0AHIAdQBlACwAIgBNACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADlo2mTbViqPH5CmXi2KCIoa/1wAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAE1SMpAa/1sAdgAgAHYAIAB2ACAAdgBdAFwAbgB0UPt5Gv9bAHYAIAAtAHYAIAAtAHYAIAB2AF0AXABuAOZdSY8a/1sALQB2ACAAdgAgAC0AdgAgAHYAXQBcAG4A81NJjxr/WwB2ACAALQB2ACAAdgAgAC0AdgBdAFwAbgAiAH0ALAAiAEIAIgA6AHsAIgBMACIAOgAiAGQAaQBzAGMAIgAsACIATQAiADoAIgAxAC4AMAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADMAOQAuACAAKFcLeg9fLU4gAHMAZQB0AF8AdwBoAGUAZQBsAF8AdgBlAGwAbwBjAGkAdAB5ACAAhHbbVgtQw1N4ZQaYj14GUiVSDVzJYepU21YLUCqPUFsf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0ALAAiAEMAIgA6AHsAIgBMACIAOgB0AHIAdQBlACwAIgBNACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAABOLIIGmI9eunAa/1wAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAGYAcgBvAG4AdAAgAGwAZQBmAHQAXABuAGYAcgBvAG4AdAAgAHIAaQBnAGgAdABcAG4AcgBlAGEAcgAgAGwAZQBmAHQAXABuAHIAZQBhAHIAIAByAGkAZwBoAHQAKCAgAAj/AJedTyFqi1dQfctpV5pJiwn/XABuACIAfQAsACIAQgAiADoAewAiAEwAIgA6ACIAZABlAGMAaQBtAGEAbAAiACwAIgBNACIAOgAiADEALgAwACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIANAAwAC4AIABZAG8AdQBCAG8AdAAgAIR2IABLAGUAeQBiAG8AYQByAGQAIACnYzZSCWfqVJtOeXKaWwljdZPNZFxPH/8I/8uKCYKLT6qKDmYJ/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0ALAAiAEMAIgA6AHsAIgBMACIAOgB0AHIAdQBlACwAIgBNACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAItPglka/1wAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFcAGv9NUjKQXABuAFMAGv+MXwCQXABuAEEAGv/mXft5XABuAEQAGv/zU/t5XABuAFEALwBFABr/y2VJj1wAbgBTAHAAYQBjAGUAGv+VYkN8XABuACIAfQAsACIAQgAiADoAewAiAEwAIgA6ACIAZABpAHMAYwAiACwAIgBNACIAOgAiADEALgAwACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIANAAxAC4AIACVYkN8X2rLaYR2GlkLUCAASABpAG4AZwBlAEoAbwBpAG4AdAAgANyVwHsvZoJZVU9kXGRcMk6lY4R2H/9QfctpgllVTy2KCIof/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0ALAAiAEMAIgA6AHsAIgBMACIAOgB0AHIAdQBlACwAIgBNACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAApOZFy6cEdTTZbCgZIhLU61a0mP1VLCgZIhK2fvekhfBFzCgQz/BFS1a6VjKFdNUgBOtWsrZ+96DP9iXxBiGlm1a9yVwHsyTqVjUH3LaQIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIANAAyAC4AIACCWVVP+Il8dpViQ3x8dgRc1VJcTx//DVzJYQljdZMvZsBOvJ4f/wt6D19BbQt6unBVTx//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAAljdZOCWSAAUwBwAGEAYwBlACAAkiEgAF9V1VIgAG0AbwB0AG8AcgAgAJIhIAA5ZYqLIABIAGkAbgBnAGUASgBvAGkAbgB0ACAA0ommXiAAkiEgAGQAZQBsAGEAeQAgAIxfqV9NTyAAkiEgAKBSZVEgAGMAbwBvAGwAZABvAHcAbgAgAEJmk5UCMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADQAMwAuACAAQ3xGaLZnIABzAHQAYQBuAGQAIACEdvt51VIUb5d71WwvZiZUCWeoll9qJ2Af/3KKgllVT+Zb/nMf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAJZwz/71N/Tyh1IAByAGEAbgBkAG8AbQAuAHUAbgBpAGYAbwByAG0AKAApACAAH3UQYu52GWogAHgALwB5AAz/LWRNkdJjPFC5ZQ9fYmFiYft51VJOkLtTAjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA0ADQALgAgANyIA3QvAAGQA3Rfastp6oHVUtyIA3SEdgqKb2CzUF6QQW0Lei9mwE68nh//f08odYZO6lSbTiAAVwBlAGIAbwB0AHMAIADdiG5/H/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAeQBvAHUAQgBvAHQAIACzUPpRIABFAG0AaQB0AHQAZQByACAACopvYMuKQmwgAJIhIADciAN0X2rLaSAAUgBlAGMAZQBpAHYAZQByACAApWM2ZSAAkiEgAF9V1VIgAG0AbwB0AG8AcgAgALNQAZADdNSaAjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA0ADUALgAgAEUAbQBpAHQAdABlAHIALwBSAGUAYwBlAGkAdgBlAHIAIAAoVxiKBlJ/ZweC3IgDdKdjNlItTm5iFG/ATrye0olygh//y4pzijB9qooOZgBOC1AKim9gs1BekMR7i08CMCIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgDSiXKCunAa/92Ibn9LTpOVGpAKiiggIACLTxr/eQBvAHUAQgBvAHQAIAB8dvpRDDByAGUAcQB1AGUAcwB0AF8AYgBhAGwAbAANMJIhIADciAN0p2M2UmhWpWM2ZYxfS5BcTyAAbQBvAHQAbwByACAA3IgDdAIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIANAA2AC4AIAADTrVrb5g6eWhWGIoGUn9nhHYgAHMAZQBnAG0AZQBuAHQAIACCWVVPOWjaZJdfBlIKim9g1VJLYYqLcoIf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgCnYzZSaFZnUZ1PZ3EGUnhlB1LbY89rtWsgAHMAZQBnAG0AZQBuAHQAIACEdiAAYwBvAGwAbwByACAAbFwnYBZiB1LbYyAAdgBpAHMAaQBiAGkAbABpAHQAeQAM//RmsGV4ZVdbAjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA0ADcALgAgAJViQ3yXXwZSL2Y5aNpk6lQLUB9hLG5oVseMmWWGTyRSt2Uf/x9hLG5oVi2Kbn+8ZVVPVYYf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAakDheLYooV0N8RmgLTrllDP9/Tyh1IABEAGkAcwB0AGEAbgBjAGUAUwBlAG4AcwBvAHIAIAAWYiAAVABvAHUAYwBoAFMAZQBuAHMAbwByACAAH2EsbkN8A3Q9hAtOf3pOkN6eAjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA0ADgALgAgAC9mJlQtigiKTpADdDKQRmiMX+qB1VKgUgZShHYLeg9fzlUf/3ZRj5Avj7pwVU8f/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAJZxr/H2EsbmhW+Il8doxfkiGgUgZSiot4ZSsAMQCSIfRmsGVvmDp5aFZ4ZVdbkiEtippbIABjAG8AbwBsAGQAbwB3AG4AIAAylmJrzZEHiaBSBlICMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADQAOQAuACAAgllVTzKWYmsDdNSaB4I0WG9maXL2Tnx2H3VelxCYH2eEdn96D5AWYnB1OF5IX/ONH/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAnligUiAAcABoAHkAcwBpAGMAcwAgAHQAaQBtAGUAcwB0AGUAcAAgAL58pl5cAG4Av4p0ZQN0B4JGaIR2IAByAGUAcwB0AGkAdAB1AHQAaQBvAG4AIAAHgiAAYwBvAG4AdABhAGMAdAAgAG0AYQB0AGUAcgBpAGEAbABcAG4Af5BNUR+Qpl5OkOtfhY36USFq7GTjiZBnpl5cAG4AIgB9ACwAIgBCACIAOgB7ACIATAAiADoAIgBkAGkAcwBjACIALAAiAE0AIgA6ACIAMQAuADAAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADUAMAAuACAAy4qqig5mgllVTy2KmlsHgr+KdGUDdNSajFRfarBo6JD2ToR26ozPkQEwaWTmZEl7aXIGdMNTeGUCMCIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0ALAAiAEMAIgA6AHsAIgBMACIAOgB0AHIAdQBlACwAIgBNACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiALxlz2sLUCAAcABoAHkAcwBpAGMAcwAgAMB73p4tippbIABtAGEAcwBzACwAIABmAHIAaQBjAHQAaQBvAG4ALAAgAGQAYQBtAHAAaQBuAGcALAAgAHIAZQBzAHQAaQB0AHUAdABpAG8AbgAgAGxcJ2AM/7+KdGXzgQZ082DAckthAjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA1ADEALgAgAC9mJlRmik6QGlnwUyAAeQBvAHUAQgBvAHQAIAAqj8qODFQ0WFRTDFSVYkN8zlUf/xpZX2pUUwxUQmYM/wqKb2AWYqdjNlIDZwlnwE68nl2IgXof/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAAl39PKHUNTgxUp2M2UmhWB4INTgxUIABFAG0AaQB0AHQAZQByAC8AUgBlAGMAZQBpAHYAZQByACAAYwBoAGEAbgBuAGUAbAAb/+WCcVEodSAAYwBoAGEAbgBuAGUAbAAgAEdSAJegUgpOWIslUrx4MpZiawqKb2D3bcZtAjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA1ADIALgAgANyIA3RBbQt6LU6CWVVPunjdT89rIWvqUwNnCWcATkaYA3SriGNrunjciGZ9MFIqj8qOH/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAoFJlUbNQAZC3UXtTQmaTlQEwf08odR9hLG5oVqJq5WeVYkN88FMKTi9mJlTyXZN9CWcDdI1RemyaWy9mJlTciAN0AjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA1ADMALgAgAOWCDF4bZ51P2mRpUhiZA3R4ZRZilWJDfCFreGXVUkthUH1fZ0qQMmIM/wt6D19yioJZVU/ofetbH/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAKFfPayFrlWJDfIxfL30IiiFreGUWYhtuEVxpUhiZA3R4ZQz/dnWdaPZOVJAQYgj/glkha3hlCk5QlhZiA3QodeF2Cf+SIS2KmlsgAGYAbABhAGcAIABQfV9nSpAyYkFtC3oCMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADUANAAuACAA6oHVUtyIA3QHguqB1VKVYkN8/YAmVDJOpWMQYoxbdGWqX7B0H/9gT4JZVU8tigiKQW0LegeCwHJLYaF7BnQf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgDvU+VODP/AckthQW0LerpwGv/ciAN0jFsQYpIhSXuFX5IhlWJDfJIhSXuFX7dRe1OSIdyIA3SSIapfsHQM/39PKHUgAHMAdABhAHQAZQAgAG0AYQBjAGgAaQBuAGUAIAChewZ0BFRla1+awHJLYQIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIANQA1AC4AIAA0WG9mLU4gAFYAaQBlAHcAcABvAGkAbgB0ACAALYqaWwlnVU9cTyh1H/9gT2aKTpC/inRlHWVxX19q0ommXsCJ31sNTgxUlonSic5VH/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAVgBpAGUAdwBwAG8AaQBuAHQAIADvUy2KmlsdZXFfX2rSiaZeB4JNT25/DP+/T7xlwInfWyFq7GRQfZxnB4IgAGQAZQBiAHUAZwACMO9TS2LVUhZiC3oPX2dRp2M2Uh1lcV9fagIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIANQA2AC4AIADLis9j8I9yioJZVU9MXWVRIABZAG8AdQBUAHUAYgBlACAAcV9HcjBSC1C6ThZiBlJEfR9nK2cxWEpUsn0BmB//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAH9PKHUgAEgAVABNAEwAIAA8AGkAZgByAGEAbQBlAD4AIABMXWVRDP+LT4JZGv9cAG4AaAB0AG0AbABcAG4AB4n9iOh9L49cAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA8AGkAZgByAGEAbQBlACAAdwBpAGQAdABoAD0AXAAiADUANgAwAFwAIgAgAGgAZQBpAGcAaAB0AD0AXAAiADMAMQA1AFwAIgAgAHMAcgBjAD0AXAAiAGgAdAB0AHAAcwA6AC8ALwB3AHcAdwAuAHkAbwB1AHQAdQBiAGUALgBjAG8AbQAvAGUAbQBiAGUAZAAvAHFfR3JJAEQAXAAiACAAZgByAGEAbQBlAGIAbwByAGQAZQByAD0AXAAiADAAXAAiACAAYQBsAGwAbwB3AGYAdQBsAGwAcwBjAHIAZQBlAG4APgA8AC8AaQBmAHIAYQBtAGUAPgBcAG4AIgB9ACwAIgBCACIAOgB7ACIASgAiADoAIgBsAHQAcgAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADUANwAuACAACFxIaE6QC3otTv5mR5AwUsBOvJ5UU1xPFmJ0ZQhU8Fbjlh//gllVT+OJemwf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0ALAAiAEMAIgA6AHsAIgBKACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADhei4nwVuOWBVPsYkhyLGddiIF6ATCnYzZSaFYmgAhUATDDU3hlDU4ATvSBSXsCMOOJemy5ZQ9funAa/3F9AE5UU3CLATAGUuVdDma6eAEwf08odSAARwBpAHQAIAChewZ0AjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA1ADgALgAgAIJZVU+/inRlGIoGUn9nA061a2+YOnloViAAcwBlAGcAbQBlAG4AdAAgAIR2T5hygspTI2oPXx//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAChXz2u1ayAAcwBlAGcAbQBlAG4AdAAgAC1Ov4p0ZSAAYQBwAHAAZQBhAHIAYQBuAGMAZQAgABZiIABtAGEAdABlAHIAaQBhAGwAIABjAG8AbABvAHIADP+mTu9TnU8GUnhliosWU4qLcoICMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADUAOQAuACAANFhvZgeCp2M2UmhWlGpIaIJZVU8oV3ZR1k4MVER9VFMMVER94VSEdvuWZoEKTvdXTIgf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBTYgVTdGULUCAAVwBlAGIAbwB0AHMAIAAIXEhox4yZZT5ZCP8rVCAAYwBvAG4AdAByAG8AbABsAGUAcgBzAAEwdwBvAHIAbABkAHMAATBwAHIAbwB0AG8AcwAJ/yZOvGUgAFcAZQBiAG8AdABzACAALU6LlV9VIAAuAHcAYgB0ACAAh2X2TnNT71MCMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADYAMAAuACAAcoqCWVVPV5pJi5ViQ3xBbQt6ATAIigZSATDciAN0ATBKkDJiUH1fZ0l7z2sLUJ9S/YD9kEuQXE9jazheH/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAEJAFmCxuZooa/1wAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAJViA3TVUlxPjF8DdANnfHYEXFwAbgADdH1ULU6MXxiKBlJ/Z6BSBlJcAG4AA3QNTrONjF/ciAN03YhufwGQA3RcAG4AVJCdaPZOjF9rdWKXb5g6eQwwRwBhAG0AZQAgAE8AdgBlAHIADTBcAG4AIgB9ACwAIgBCACIAOgB7ACIATAAiADoAIgBkAGkAcwBjACIALAAiAE0AIgA6ACIAMQAuADAAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA2ADEALgAgAMuK6oFMiLxlIABXAGUAYgBvAHQAcwAgADRYb2awZZ5YFmIqUmSWAE5GmEN8A3Qf/81kXE9la1+aunBVTx//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQAsACIAQwAiADoAewAiAEwAIgA6AHQAcgB1AGUALAAiAE0AIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAKFcgAFMAYwBlAG4AZQAgAFQAcgBlAGUAIADzU3WTkiFBAGQAZAAgAE4AZQB3ACAATgBvAGQAZQCSIXiQx2QgAFMAbwBsAGkAZACSIS2KunADdGJfkiF9VA1UunAgAGIAYQBzAGsAZQB0AGIAYQBsAGwAG/+BiSpSZJZHUniQA3TUmvNTdZOSIUQAZQBsAGUAdABlAC4AXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIANgAyAC4AIACCWVVPKFc0WG9mLU4tippbQ3wDdIR2Olz4WwEwT5hyggeCaXIGdGxcJ2Af/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAtippbIABiAG8AdQBuAGQAaQBuAGcATwBiAGoAZQBjAHQAIAC6cAN01JqSIXIAYQBkAGkAdQBzACAAp2M2Ujpc+Fsb/2EAcABwAGUAYQByAGEAbgBjAGUAIACnYzZST5hyghv/cABoAHkAcwBpAGMAcwAgAC1OLYrqjM+RATBpZOZkSXsCMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADYAMwAuACAAL2YmVGaKTpDuTzllIAB5AG8AdQBCAG8AdAAgABZiIABzAHQAYQBuAGQAIABfastphHbqjM+RFmJpZOZkwk94Zc5VH/+CWVVP7k85ZR//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAO9TKFcgAHAAaAB5AHMAaQBjAHMAIABAU0pYLU7uTzllIABtAGEAcwBzACAAB4IgAGYAcgBpAGMAdABpAG8AbgAgAMNTeGUM/19O/YA5ZdyVwHsgAG0AbwB0AG8AcgAgAIR2m1LPkVCWNlICMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADYANAAuACAA5YKBiVCWNlIgAHkAbwB1AEIAbwB0ACAA6lP9gLxlB2OaW0BT31c7bdVSDP+CWVVPvGWnYzZSaFbmW1xPH/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAKHUgAEcAUABTACAAFmIgAFMAdQBwAGUAcgB2AGkAcwBvAHIAIADjdixuTU9ufwz/5YKFjfpRxHsNV3NTXFBiaxZiN182Uvt53lYIVNVsQFPfVwIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIANgA1AC4AIAByioJZVU8tippbJk5XmkmLIAB5AG8AdQBCAG8AdAAgAIR2HVLLWR1nEVQHgstlSY/SiaZeH/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIALYqaWyAAcgBvAHQAYQB0AGkAbwBuACAAunAgAFsAMAAgADEAIAAwACAAuANdAAz/uAMgALpwHWcRVNKJG/+8ZSAAYwBvAG4AdAByAG8AbABsAGUAcgAgAHBT+lEgAEkATQBVACAAeQBhAHcAIAA8ULp4jYovZiZUY2u6eAIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIANgA2AC4AIAA0WG9mLU5DfEZoCP9zAHQAYQBuAGQACf+CWVVPLYqaW6iWX2r7edVShHbEew1XB4K5ZRFUH/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAp2M2UmhWLU4tippbp14ZaoqQTHUM/4JZIAB4ACAACCIgAFsAMQAsADIAXQAM/3kAIAD6VppbFmKuX7+KDP+oll9qeJCwZe52GWomThCQZWv7edVSAjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA2ADcALgAgAGBPZopXhJOLlWJDfCqPyo7qgdVSDVyWbiZOYJfRj0N8RmjOVR//C3oPX4+QL48vZsBOvJ4f/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgB/Tyh1IABHAFAAUwAgANZTl1/qgauOB4JDfEZoTU9uf5IhCIqXexFUz5EHgtKJpl6SIUhRy2VJjw1clm6SIY1RTVIykGCX0Y8CMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADYAOAAuACAAdnWVYgN0Kmd9VC1OQ3xGaEJmDP+CWVVPvGULeg9fLU4YigSTDDAqZ5dfBlINMB//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAKBSCk4gAHQAaQBtAGUAbwB1AHQAIAAWYiRSt2UfYSxuaFYqZ/iJfHZzU+9Tlom6cCpnl18GUgz/iot4ZXF9CIogAG0AaQBzAHMAXwBjAG8AdQBuAHQAIAArAD0AIAAxAAIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIANgA5AC4AIABgT/5mk31LYtVSzZFuf2hR6JBDfAN0hHZNT25/zlUf/81kXE9BbQt6unBVTx//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiALxlIAAuAHcAYgB0ACAAFmIgAFMAdQBwAGUAcgB2AGkAcwBvAHIAIAAtTs2RLYoDdNSaTU9ufyAAdAByAGEAbgBzAGwAYQB0AGkAbwBuAAz/FmIqUmSWjVGwZZ5YQGIJZwN01JoCMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADcAMAAuACAAYE8vZiZUF1Zmik6QB1wYigZSf2dvmDp5OWW6cGlRTU94ZRZi21ZNT3hlH/+CWVVPv4p0ZR//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiALxlNFhvZi1OoFJlUfRmGlkDTrVrQ1H2TpIhBlIlUqdjNlLPawBOTU+SIQt6D18HXAZSeGXGYuOJunALUE1PATBBU01PJiCMXwZSJVJvmDp5AjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA3ADEALgAgAIJZVU+TixiKBlJ/ZyhXSpAyYlB9X2eMX+qB1VJvmDp5DDBHAGEAbQBlACAATwB2AGUAcgANMBZidlHWTgqKb2Af/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgDvU6BSCk4gAHQAZQB4AHQAIABvAHYAZQByAGwAYQB5ACAAFmIHUttjb5g6eWhWIABzAGUAZwBtAGUAbgB0ACAAunB5cppbRH0IVONOaIggAEcAIABBACAATQAgAEUAIABPACAAVgAgAEUAIABSAAj/AJfqgS2KV1tDUQ1cyWEJ/wIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIANwAyAC4AIABgTy9mJlQJZ92RDVwDdNSaeGXPkQ1Os41CZuqB1VLciAN0H/8Leg9fgllVTy2KCIof/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgCnYzZSaFZnUS2KmlsDdM+Riot4ZRv/z2sha5ViQ3wbbhFcDP9OT7xlC05QlkJms1AKim9gX1XVUtyIA3SnYzZSaFbciAN0AjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA3ADMALgAgAIJZVU+8ZadjNlJoVi1O5lv+cwwwlWIDdLdRe1NCZpOVDTDlTjKWYmsjkIx+fHYEXB//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAH9PKHUgAHQAaQBtAGUALgB0AGkAbQBlACgAKQAgABiKBJMKTiFrfHYEXEJmk5UM/y2KmlsgAGMAbwBvAGwAZABvAHcAbgAgAJOVlJYM/w1O/26zjZ1o9k5CZoF5Ymv4iXx2lWIDdNVSXE8CMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADcANAAuACAAYE/9gCZUgIvWUweCb5g6eSAAeQBvAHUAQgBvAHQAIACEdnNTQmYfkKZeFmL7edVS742RXx//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAO9TD5BOkCOQjH6Ai9ZTIABHAFAAUwAgAE1Pbn8M/wiKl3tNT/t5ZJblTkJmk5Vyc5dfH5CmXgz/FmJqfv2I742RXxiKBJPzgWOWF1ItTgIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIANwA1AC4AIABgTwlnLG5mik6QB1yVYkN8QW0LeoR2p2M2UgqKb2DlTodlV1sKim9gCP+CWUwATwBHAAn/c1NCZm+YOnkoV0J973pfas5VH/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIACWcM/39PKHUgAHAAcgBpAG4AdAAoACkAIAC8ZSAAYwBvAG4AdAByAG8AbABsAGUAcgAgAGdRc1NCZjiP+lF2dU1SwHJLYQz/glkMMJViQ3wtTg0wDDDciAN0jFsQYg0wSXuHZVdbAjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA3ADYALgAgADRYb2YtToR2IABEAGkAcwB0AGEAbgBjAGUAUwBlAG4AcwBvAHIAIACCWVVPLYqaW8+RLG7djeKWB4JIl09lpl4f/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAoVyAARABpAHMAdABhAG4AYwBlAFMAZQBuAHMAbwByACAALYqaWyAAbABvAG8AawB1AHAAVABhAGIAbABlACAAB4IgAG0AYQB4AFIAYQBuAGcAZQAM/yZOv4p0ZSAAdABpAG0AZQBzAHQAZQBwACAA1lOXX/Rmc1NCZoR2eGU8UIqLFlMCMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADcANwAuACAAL2YmVAln5E5DfEZotmcykEyIXpfafSdgFmKgUh+Qpl5LkNVSH/+CWVVP5ltcTx//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAO9Tf08odYxOIWv9UXhlFmIJTtKJ/VF4ZS2KmltNT25/iosWU/Jm2n0M/xZioFJlUaBSH5CmXqdjNlL9UQ9fIWrsZOZbm5agUhtuH5ACMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADcAOAAuACAAgllVTwdcIAB5AG8AdQBCAG8AdAAgAPt51VIHgpViQ3xBbQt6dGUIVBBiAE4LUOqB1VIWUyxuZopzgSxnH/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIA61sQYglnUJbAckthX2ogAEYAUwBNABr/+3nVUpIhlWJDfJIhCIoGUpIht1F7U5Ih3lYwUneN3p6SIc2RB4lBbQt6DP+MWxBi6oHVUhZTLG5migIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIANwA5AC4AIAAvZiZUZopOkChXDFQATjRYb2YLTgxUQmb6Xst6aVELUOVOCk6EdgiKBlJ/Z85VH//NZFxPuWUPX7pwVU8f/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgDvU/pey3ppUUR9A061a2+YOnloVgz/C1AlUn1UDVQHgqdjNlIM/89rRH0GUiVSpWM2ZQRU6oGEdhiKBlIKim9gJk5vmDp5AjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA4ADAALgAgAIJZVU+8ZSAAVwBlAGIAbwB0AHMAIAA0WG9mLU6gUmVRElB4ZQiKQmZoVhZiSpAyYgiKQmafUv2AH/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAvGWnYzZSaFYtTgiKl3shauxkS5BMiEJmk5UgACgAZwBlAHQAVABpAG0AZQAoACkAKQAgAAeCCk5QltRrA48M/yZOKHWHZVdbb5g6ebxla3VilwIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAOAAxAC4AIAD9gCZUvGULeg9fLU51UCxuIAB5AG8AdQBCAG8AdAAgAC9mJlRhU09PFmJ8dh91sHieZB//gllVT1WGBnQf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgB1UCxuuWUPXxr/XABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAH5CmXneVQmaTlaVj0Y8gADAAXABuAKBSH5CmXh9hLG5oVi8ASQBNAFUAIACKixZTcHU4XlwAbgDvU/iJfHZ/kJyWC3qPXhZizZGaW01PXABuACIAfQAsACIAQgAiADoAewAiAEwAIgA6ACIAZABpAHMAYwAiACwAIgBNACIAOgAiADEALgAwACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAOAAyAC4AIAB2dQlnGlnwUyAAeQBvAHUAQgBvAHQAIAAqj8qOQmYM/4JZVU9AUwZSBFTqgYR2p2M2UgeCCopvYBqQU5Af/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0ALAAiAEMAIgA6AHsAIgBMACIAOgB0AHIAdQBlACwAIgBNACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAH9PKHUNTgxUp2M2UmhWB4IgAEUAbQBpAHQAdABlAHIALwBSAGUAYwBlAGkAdgBlAHIAIAAtippbIABjAGgAYQBuAG4AZQBsACAAunANTgxUeGVXWwz/Jk6gUmVRWIslUuNOvHgCMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADgAMwAuACAA5YIMXhtnB1zciAN0X2rLaS2KCIq6cAwwGlnentyIA3QNMAz/coqCWVVPLYoIih//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAC2Kbn8aWQtQ3IgDdN2Ibn8M/89rC1ANXMlhAE4LUCAAeQBvAHUAQgBvAHQAIAB1UCxu3p4M/ylSKHUGUkBTCopvYCRSJVIvZupUC1DKjsuKQmwDdAIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAOAA0AC4AIAAvZiZULG5mik6QDU4MVEN8A3TqjM+RDVyVYkN825hMiMyO4Y2EdnFf/5cf/1B9nGeCWVVPH/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIA6ozPkZ5YoFKSIQOPDU4TZtdTqJgWYmlk5mRxX/+XG//qjM+RKlkPXANnDlz0gUhf841OkKZeATDMjuGNDU5pegIwAJdzXmGILYoIigIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAOAA1AC4AIACCWVVPvGUhauxkLU5LYtVSFmLqgdVSBJP9iCZO3lY+ZZViQ3xOkAt6H/8iAH0ALAAiAEIAIgA6AHsAIgBCACIAOgAiADEAOAAuADcAMgBwAHgAIgAsACIAQwAiADoAIgBiAG8AbABkACIALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAXABuACIAfQAsACIAQwAiADoAewAiAEMAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAf08odSAAVwBlAGIAbwB0AHMAIABnUfpeBJNxX59S/YAI/5aJl3oKTrll+HZfahZXOnkJ/xZi6oHVUqdjNlILTgST/YggAC4AbQBwADQAIAAWYjiP+lEgAGwAbwBnACAABlKQZwIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAOAA2AC4AIAAvZiZU/YC8ZadjNlJoVgt6D19nUQxUQmZ0ZQhUGlkuenWT5HYvANFuIJ8vAOqB1VKnYzZSIWoPXx//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAO9T5U4M/wt6D18tTqBSZVEhag9fB1LbY4qLeGUI/4JZS2LVUgEw6oHVUgn/DP+NUZ1Pcoohag9f91dMiA1cyWGPkC+PAjBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQgAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgA4ADcALgAgAOWC/mZHkDBSTpA0WG9mCY9lUfpR/nMgAG0AZQBzAGgAIACUakhoepAxWRZiL5Okigz/coqCWVVPkmNklh//IgB9ACwAIgBCACIAOgB7ACIAQgAiADoAIgAxADgALgA3ADIAcAB4ACIALAAiAEMAIgA6ACIAYgBvAGwAZAAiACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBDACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiAKJq5WcVXyh1742RXy9mJlRja7p4ATC6eN1PIABwAHIAbwB0AG8AcwAgABZiIABtAGUAcwBoAGUAcwAgAJRqSGhYWyhXG/+CWRVfKHUwUvh2DVzvjZFfL5OkigCX7k9jawIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAOAA4AC4AIAAvZiZUvGUIXEhoTpALei1O+l7Lek6QCFxsXIR2IABwAHIAbwB0AG8AIAAWYuqBAoo0WG9maXL2Th//gllVTy2KCIof/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgAJZwz/6oH6XiAAbQB5AFQAaAByAG8AdwBlAHIALgBwAHIAbwB0AG8AIACSISAA61tlUWly9k5QfctpIACSISAAFV9lUdyVwHsHgiAAbQBvAHQAbwByACAAw1N4ZSAAkiEgAChXNFhvZi1O0mNlUX9PKHUCMFwAbgAiAH0ALAAiAEMAIgA6AHsAIgBCACIAOgB0AHIAdQBlACwAIgBBAD8AIgA6ACIAQgBfACIAfQB9ACwAewAiAEEAIgA6AHsAIgBBAD8AIgA6ACIAQQAiACwAIgBBACIAOgAiADgAOQAuACAAgllVT3liIWssbmaKGlkuepViQ3zDU3hlCP+CWdKJpl4BMJtSpl4J/yZOGIoEk1B9nGcf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgCwZOtb9I8IVyxuZopzgSxnGv+dT9KJpl4HgptSpl7Eew1XRH0IVDKQTIghauxkIACSISAAGIoEk5dfBlIHgn1ULU6HcwIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0ALAB7ACIAQQAiADoAewAiAEEAPwAiADoAIgBBACIALAAiAEEAIgA6ACIAOQAwAC4AIAB2dSAAVwBlAGIAbwB0AHMAIAD0ZrBlSHIsZxZiiov0ZiAAQQBQAEkADP9yioJZVU+tfXeLB4LuT2Nrn1MJZwhcSGgf/yIAfQAsACIAQgAiADoAewAiAEIAIgA6ACIAMQA4AC4ANwAyAHAAeAAiACwAIgBDACIAOgAiAGIAbwBsAGQAIgAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgBcAG4AIgB9ACwAIgBDACIAOgB7ACIAQwAiADoAdAByAHUAZQAsACIAQQA/ACIAOgAiAEIAXwAiAH0AfQAsAHsAIgBBACIAOgB7ACIAQQA/ACIAOgAiAEEAIgAsACIAQQAiADoAIgDDU7GVIABXAGUAYgBvAHQAcwAgAPRmsGUAfQSTIACSISAAomrlZyAAZABlAHAAcgBlAGMAYQB0AGUAZAAgAEEAUABJACAAkiEgACxuZoqfU6djNlJoViAAkiEgAO5POWUNTvh2uVvokAZSFmL/ZuNO/VEPXwIwXABuACIAfQAsACIAQwAiADoAewAiAEIAIgA6AHQAcgB1AGUALAAiAEEAPwAiADoAIgBCAF8AIgB9AH0AXQAsACIAQgAiADoAewAiAEEAQQBBAEIAbAA1AGIAVQBiADQASQBmAEIAUgBCAF8AZQB0AEoAQQAyAHcAIgA6AHsAIgBCACIAOgA3ADgANAA3AH0ALAAiAEEAQQBBAEIAbAA1AGIATgB6AHIAQQBSAHgAOQBBAEsAVwBIAHYAWAA5AGcAIgA6AHsAfQAsACIAQQBBAEEAQgBsADUAYgBRAFEAUgBmADgAaABjAEkAUABMAEQANABOADMAdwAiADoAewB9ACwAIgBBAEEAQQBCAGwANQBhADAAagB2AEQAMgBnADMAQwBOAE0AeABkAFUARgBRACIAOgB7ACIAQQAiADoANAAzADQAOAAsACIAQgAiADoANAAzADkANAB9AH0AfQB9AA=="></span>
 <div>
 <p><span>1. 本協同專案的目標與主要功能為何？</span></p>
@@ -992,246 +866,54 @@ def display_unassigned_members(url):
 </div>
 <div id="gtx-trans" style="position: absolute; left: 393px; top: 4489.5px;">
 <div class="gtx-trans-icon"></div>
-</div><h1>Brython</h1>
-<p><button id="add1to100">1 add to 100</button></p>
-<!-- 導入 brython 程式庫 -->
-<p>
-<script src="/static/brython.js"></script>
-<script src="/static/brython_stdlib.js"></script>
-</p>
-<!-- 啟動 Brython -->
-<p>
-<script>
-window.onload=function(){
-brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
-}
-</script>
-</p>
-<p><!-- 導入 FileSaver 與 filereader --></p>
-<p>
-<script src="/static/ace/FileSaver.min.js" type="text/javascript"></script>
-<script src="/static/ace/filereader.js" type="text/javascript"></script>
-</p>
-<p><!-- 導入 ace --></p>
-<p>
-<script src="/static/ace/ace.js" type="text/javascript"></script>
-<script src="/static/ace/ext-language_tools.js" type="text/javascript"></script>
-<script src="/static/ace/mode-python3.js" type="text/javascript"></script>
-<script src="/static/ace/snippets/python.js" type="text/javascript"></script>
-</p>
-<p><!-- 導入 gearUtils-0.9.js Cango 齒輪繪圖程式庫 -->
-<script src="/static/Cango-24v03-min.js"></script>
-<script src="/static/gearUtils-09.js"></script>
-<script src="/static/SVGpathUtils-6v03-min.js"></script>
-<script src="/static/sylvester.js"></script>
-<script src="/static/PrairieDraw.js"></script>
-</p>
-<p><!-- 請注意, 這裡使用 Javascript 將 localStorage["kw_py_src1"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
-<p>
-<script type="text/javascript">
-function doSave(storage_id, filename){
-    var blob = new Blob([localStorage[storage_id]], {type: "text/plain;charset=utf-8"});
-    filename = document.getElementById(filename).value
-    saveAs(blob, filename+".py");
-}
-</script>
-</p>
-<p>
-<script type="text/python3">
-from browser import document as doc
-import ace
-# 清除畫布
-def clear_bd1(ev):
-    bd = doc["brython_div1"]
-    bd.clear()
-Ace1 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
-# 從 gist 取出程式碼後, 放入 editor 作為 default 程式
-def run1():
-    # 利用 get 取下 src 變數值
-    try:
-        url = doc.query["src"]
-    except:
-        url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c3a6deaf717f8f2739a4b1392a5ab10936e9693a/from_1_add_to_10_1.py"
-    prog = open(url).read()
-
-    # 將程式載入編輯區
-    Ace1.editor.setValue(prog)
-    Ace1.editor.scrollToRow(0)
-    Ace1.editor.gotoLine(0)
-    # 直接執行程式
-    #ns = {'__name__':'__main__'}
-    #exec(prog, ns)
-    # 按下 run 按鈕
-    Ace1.run()
-
-# 執行程式, 顯示輸出結果與清除輸出結果及對應按鈕綁定
-doc['kw_run1'].bind('click', Ace1.run)
-doc['kw_show_console1'].bind('click', Ace1.show_console)
-doc['kw_clear_console1'].bind('click', Ace1.clear_console)
-doc['clear_bd1'].bind('click', clear_bd1)
-# 呼叫函式執行
-run1()
-</script>
-</p>
-<p><!-- add 1 to 100 開始 -->
-<script type="text/python3">
-from browser import document as doc
-import ace
-
-# 清除畫布
-def clear_bd1(ev):
-    bd = doc["brython_div1"]
-    bd.clear()
-
-# 利用 ace 中的 Editor 建立 Ace2 物件, 其中的輸入變數分別對應到頁面中的編輯區物件
-Ace2 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
-
-add1to100_url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c48e37714f055c3a0027cbfef59e442a6ef659b9/from_1_add_to_100_1.py"
-
-# 從 gist 取得程式碼
-add_src = open(add1to100_url).read()
-def add(ev):
-    Ace2.editor.setValue(add_src)
-    Ace2.editor.scrollToRow(0)
-    Ace2.editor.gotoLine(0)
-    Ace2.run()
-
-# id 為 "add1to100" 的按鈕點按時, 執行 add 方法
-doc["add1to100"].bind('click', add)
-</script>
-</p>
-<p><!-- add 1 to 100 結束--></p>
-<!-- editor1 開始 -->
-<p><!-- 用來顯示程式碼的 editor 區域 --></p>
-<div id="kw_editor1" style="width: 600px; height: 300px;"></div>
-<p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
-<p><!-- 存擋表單開始 --></p>
-<form><label>Filename: <input id="kw_filename" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src1', 'kw_filename1');" type="submit" value="Save"/></form>
-<p><!-- 存擋表單結束 --></p>
-<p></p>
-<p><!-- 執行與清除按鈕開始 --></p>
-<p><button id="kw_run1">Run</button> <button id="kw_show_console1">Output</button> <button id="kw_clear_console1">清除輸出區</button><button id="clear_bd1">清除繪圖區</button><button onclick="window.location.reload()">Reload</button></p>
-<p><!-- 執行與清除按鈕結束 --></p>
-<p></p>
-<p><!-- 程式執行 ouput 區 --></p>
-<div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console1"></textarea></div>
-<p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
-<div id="brython_div1"></div>
-<!-- editor1 結束 --><hr/><!-- ########################################## -->
-<p>從 1 累加到 100 part2:</p>
-<p><button id="add1to100part2">1 add to 100</button><button id="cango_three_gears">cango_three_gears</button><button id="bsnake">BSnake</button><button id="aitetris">AI Tetris</button></p>
-<p><!-- 請注意, 這裡使用 Javascript 將 localStorage["kw_py_src2"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
-<p>
-<script type="text/python3">
-from browser import document as doc
-import ace
-# 清除畫布
-def clear_bd2(ev):
-    bd = doc["brython_div2"]
-    bd.clear()
-Ace3 = ace.Editor(editor_id="kw_editor2", console_id="kw_console2", container_id="kw__container2", storage_id="kw_py_src2" )
-# 從 gist 取出程式碼後, 放入 editor 作為 default 程式
-def run2():
-    # 利用 get 取下 src 變數值
-    try:
-        url = doc.query["src2"]
-    except:
-        url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c3a6deaf717f8f2739a4b1392a5ab10936e9693a/from_1_add_to_10_1.py"
-    prog = open(url).read()
-
-    # 將程式載入編輯區
-    Ace3.editor.setValue(prog)
-    Ace3.editor.scrollToRow(0)
-    Ace3.editor.gotoLine(0)
-    # 直接執行程式
-    #ns = {'__name__':'__main__'}
-    #exec(prog, ns)
-    # 按下 run 按鈕
-    Ace3.run()
-
-# 執行程式, 顯示輸出結果與清除輸出結果及對應按鈕綁定
-doc['kw_run2'].bind('click', Ace3.run)
-doc['kw_show_console2'].bind('click', Ace3.show_console)
-doc['kw_clear_console2'].bind('click', Ace3.clear_console)
-doc['clear_bd2'].bind('click', clear_bd2)
-# 呼叫函式執行
-run2()
-</script>
-</p>
-<p><!-- add 1 to 100 part2 開始 -->
-<script type="text/python3">
-from browser import document as doc
-import ace
-
-# 清除畫布
-def clear_bd2(ev):
-    bd = doc["brython_div2"]
-    bd.clear()
-
-# 利用 ace 中的 Editor 建立 Ace2 物件, 其中的輸入變數分別對應到頁面中的編輯區物件
-Ace4 = ace.Editor(editor_id="kw_editor2", console_id="kw_console2", container_id="kw__container2", storage_id="kw_py_src2" )
-
-# 透過 Ace4 以類別建立一個通用的 button2, 可以在多個案例中將 gist 程導入編輯區
-
-class button2:
-    def __init__(self, url):
-        self.url = url
-
-    # 記得加入 event 輸入變數
-    def do(self,ev):
-        Ace4.editor.setValue(open(self.url).read())
-        Ace4.editor.scrollToRow(0)
-        Ace4.editor.gotoLine(0)
-        Ace4.run()
-
-add1to100_url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c48e37714f055c3a0027cbfef59e442a6ef659b9/from_1_add_to_100_1.py"
-
-# 從 gist 取得程式碼
-add_src = open(add1to100_url).read()
-def add2(ev):
-    Ace4.editor.setValue(add_src)
-    Ace4.editor.scrollToRow(0)
-    Ace4.editor.gotoLine(0)
-    Ace4.run()
-
-# id 為 "add1to100part2" 的按鈕點按時, 執行 add 方法
-doc["add1to100part2"].bind('click', add2)
-# 以下為運用 button2 class 的通用 gist 程式導入區
-################################## cango_three_gears start
-cango_three_gears_url = "https://gist.githubusercontent.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d/raw/f7a85d737d6723d5e34c526d5daee990ed92c32b/cango_three_gears_brython_div2.py"
-cango_three_gears = button2(cango_three_gears_url)
-doc["cango_three_gears"].bind("click", cango_three_gears.do)
-################################## cango_three_gears end
-################################## bsnake start
-bsnake_url = "https://gist.githubusercontent.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d/raw/f7a85d737d6723d5e34c526d5daee990ed92c32b/kmol_snakey.py"
-bsnake = button2(bsnake_url)
-doc["bsnake"].bind("click", bsnake.do)
-################################## bsnake end
-################################## aitetris start
-aitetris_url = "https://gist.githubusercontent.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d/raw/f7a85d737d6723d5e34c526d5daee990ed92c32b/pygame_to_brython_tetris_ai.py"
-aitetris = button2(aitetris_url)
-doc["aitetris"].bind("click", aitetris.do)
-################################## aitetris end
-</script>
-</p>
-<p><!-- add 1 to 100 part2 結束--></p>
-<!-- editor2 開始 -->
-<p><!-- 用來顯示程式碼的 editor 區域 --></p>
-<div id="kw_editor2" style="width: 600px; height: 300px;"></div>
-<p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
-<p><!-- 存擋表單開始 --></p>
-<form><label>Filename: <input id="kw_filename2" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src2', 'kw_filename2');" type="submit" value="Save"/></form>
-<p><!-- 存擋表單結束 --></p>
-<p></p>
-<p><!-- 執行與清除按鈕開始 --></p>
-<p><button id="kw_run2">Run</button> <button id="kw_show_console2">Output</button> <button id="kw_clear_console2">清除輸出區</button><button id="clear_bd2">清除繪圖區</button><button onclick="window.location.reload()">Reload</button></p>
-<p><!-- 執行與清除按鈕結束 --></p>
-<p></p>
-<p><!-- 程式執行 ouput 區 --></p>
-<div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console2"></textarea></div>
-<p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
-<div id="brython_div2"></div>
-<!-- editor2 結束 --><hr/>
-<p>
-<script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
-</p>
+</div><br />Final << <a href='Final.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
